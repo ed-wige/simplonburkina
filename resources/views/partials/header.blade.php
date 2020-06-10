@@ -16,8 +16,8 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <li><button class="btn bnt-danger"><a href="{{route('index')}}">Acceuil</a></button></li>
-                  <li><button class="btn btn-danger"><a href="{{route('formations')}}" id="men">Nos Formations</a></button></li>
-                  <li><button class="btn btn-danger"><a href="#" id="men">Nos Simplonniens</a></button></li>
+                <li><button class="btn btn-danger"><a href="#" id="men">Nos Formations</a></button></li>
+                  <li><button class="btn btn-danger"><a href="alumnis/FormAlumni" id="men">Nos Simplonniens</a></button></li>
                   <li><button class="btn btn-danger"><a href="#" id="men">Notre equipe</a></button></li>
                   <li><button class="btn btn-danger"><a href="#" id="men">Contact</a></button></li>
                 </ul>

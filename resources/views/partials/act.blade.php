@@ -59,7 +59,7 @@
      
 <main role="main">
 
-    <section class="jumbotron text-center" >
+    <section class="jumbotron text-center">
       <div class="container">
         <h1 style="text-decoration:underline red;">Nos Evenements</h1>
         <p class="lead text-muted"></p>
@@ -67,36 +67,43 @@
       </div>
     </section>
   
-     <div class="album py-5 bg-light" >
+    {{-- <div class="album py-5 bg-light">
         <div class="container">
         
-          <div class="row" >
+          <div class="row">
 
               @if ($evenements ->count()>0)
-              @foreach ($evenements  as $evenement )
-              <div class="jumbotron"  style="width:24%;">
-                  <h1 class="display-4" width="25%">{{$evenement->titre}}</h1>
-                  <p class="lead"  style="width:25%;">{{$evenement->evencontenu}}</p>
-                  <hr class="my-4">
-                  <p  style="width:25%;">{{$evenement->date}} - {{$evenement->lieu}} - {{$evenement->heure}}</p>
-                  <p class="lead"  style="width:25%;">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                  </p>
-                </div> &nbsp;
-              
-                  
-                    
-                    @endforeach 
-                  @else
+            @foreach ($evenements  as $evenement )
+            <div class="jumbotron">
+                <h1 class="display-4">{{$evenement->titre}}</h1>
+                <p class="lead">{{$evenement->evencontenu}}</p>
+                <hr class="my-4">
+                <p>{{$evenement->date}} - {{$evenement->lieu}} - {{$evenement->heure}}</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+              </div>
+            
+                {{-- @if ($actualities ?? ''->count()>0)
+                    @foreach ($actualities ?? '' as $actualitie )
+                            <p> {{$actualitie->titre}} </p>
+                            <p> {{$actualitie->photo}} </p>
+                            <p> {{$actualitie->date}} </p>
+                            <p> {{$actualitie->newsactu}} </p>
+                        
+                    @endforeach --}}
+{{--                 
+                @endforeach
+                @else
                 <p>aucun evenement pour l'instant</p>
-                @endif
+                @endif --}}
   
-       </div>
+        {{-- </div>
        
       </div> 
-    </div> 
+    </div> --}}
   
-  </main> <br><br>
+  </main>
   
   
   

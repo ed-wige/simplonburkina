@@ -11,16 +11,8 @@ class welcomecontroller extends Controller
     
     public function index()
     {
-        $evenements = Evenement::all();
         $actualities = Actuality::all();
-        return view('welcome', compact('actualities','evenements'));
-        
-    }
-
-    public function formations()
-    {
-       
-        return view('formations');
+        return view('welcome', compact('actualities'));
     }
 
     public function store(REQUEST $request)
