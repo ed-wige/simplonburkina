@@ -17,17 +17,28 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::resource('/', 'welcomecontroller');
-Route::get('welcome','welcomecontroller@index');
-Route::get('formations','formationscontroller@index')->name('formations');
+Route::get('success','welcomecontroller@index');
 
 Route::get('/admin/actualities','actualitiescontroller@create')->name('root_path');
 
 Route::resource('/admin/actualities', 'actualitiescontroller');
 
-Route::get('success','successcontroller@index')->name('root_path');
 
-Route::get('/admin/evenements','evenementscontroller@create')->name('root_path');
-Route::resource('/admin/evenements', 'evenementscontroller');
+Route::get('/portrait', 'ApprenantsController@portrait');
+
+Route::get('/create', 'ApprenantsController@create');
+
+Route::get('alumnis/FormAlumni', 'AlumnisController@FormAlumni');
+
+Route::post('/ajouter', 'ApprenantsController@strore');
+
+Route::post('alumnis', 'AlumnisController@store2');
+
+Route::get('alumnis/liste', 'AlumnisController@liste');
+
+// Route::get('/admin/actualities','evenementscontroller@create')->name('root_path');
+
+// Route::resource('/admin/actualities', 'evenementscontroller');
 
 
 

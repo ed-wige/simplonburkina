@@ -6,8 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Alumni' => $baseDir . '/app/Alumni.php',
+    'App\\Apprenant' => $baseDir . '/app/Apprenant.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\AlumnisController' => $baseDir . '/app/Http/Controllers/AlumnisController.php',
+    'App\\Http\\Controllers\\ApprenantsController' => $baseDir . '/app/Http/Controllers/ApprenantsController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -17,7 +21,7 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\actualitiescontroller' => $baseDir . '/app/Http/Controllers/actualitiescontroller.php',
     'App\\Http\\Controllers\\evenementscontroller' => $baseDir . '/app/Http/Controllers/evenementscontroller.php',
-    'App\\Http\\Controllers\\successcontroller' => $baseDir . '/app/Http/Controllers/successcontroller.php',
+    'App\\Http\\Controllers\\success1controller' => $baseDir . '/app/Http/Controllers/success1controller.php',
     'App\\Http\\Controllers\\welcomecontroller' => $baseDir . '/app/Http/Controllers/welcomecontroller.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\actuality;
 use Illuminate\Http\Request;
 
@@ -36,8 +35,6 @@ class actualitiescontroller extends Controller
     {
         $actualities = Actuality::all();
         return view('/admin/actualities', compact('actualities'));
-
-        
     }
 
     

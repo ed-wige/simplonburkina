@@ -10,10 +10,7 @@ class evenementscontroller extends Controller
 
     public function create()
     {
-        
-
         return view('/admin/evenements');
-        
     }
 
     public function store(REQUEST $request)
@@ -37,6 +34,6 @@ class evenementscontroller extends Controller
     public function index()
     {
         $evenements = Evenement::all();
-        return view('/admin/evenements', $evenements);
+        return view('/admin/evenements', compact('evenements'));
     }
 }
